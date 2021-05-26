@@ -788,7 +788,7 @@ class PDOEngine extends PDO {
 		if (in_array($param{strlen($param)-1}, array("'",'"'))) {
 			$param = substr($param,0,-1) ;//end
 		}
-		if (in_array($param{0}, array("'",'"'))) {
+		if (in_array($param[0], array("'",'"'))) {
 			$param = substr($param, 1); //start
 		}
 		//$this->extracted_variables[] = $param;
